@@ -2,6 +2,8 @@
 #undef TAPPING_TERM
 #define TAPPING_TERM 125
 
+#define CAPS_WORD_INVERT_ON_SHIFT
+
 #define PERMISSIVE_HOLD
 
 #define QUICK_TAP_TERM 0
