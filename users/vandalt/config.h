@@ -1,6 +1,6 @@
 #define CHORDAL_HOLD
 #undef TAPPING_TERM
-#define TAPPING_TERM 125
+#define TAPPING_TERM 130
 
 #define CAPS_WORD_INVERT_ON_SHIFT
 
