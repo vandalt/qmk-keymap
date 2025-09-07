@@ -1,7 +1,7 @@
 #include QMK_KEYBOARD_H
 #include "layers.h"
 
-#define LAYOUT_LR(...) LAYOUT_voyager(__VA_ARGS__)
+#define LAYOUT_LR(...) LAYOUT(__VA_ARGS__)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_WRAPPER(VANDALT_BASE_LAYER),
