@@ -7,24 +7,27 @@
 #define MT_F MT(MOD_LGUI, KC_F)
 #define LT_G LT(2, KC_G)
 
+// Home row right
+#define MT_H LT(1, KC_H)
+#define MT_J MT(MOD_RGUI, KC_J)
+#define MT_K MT(MOD_RCTL, KC_K)
+#define MT_L MT(MOD_LALT, KC_L)
+#define MT_SCLN MT(MOD_RSFT, KC_SCLN)
+
 // Bottom row left
 #define MT_Z MT(MOD_LCTL, KC_Z)
 #define MT_X MT(MOD_LSFT, KC_X)
 #define MT_V MT(MOD_RALT, KC_V)
 #define LT_B LT(3, KC_B)
 
-#define LT_ESC LT(1, KC_ESCAPE)
-#define MT_H LT(1, KC_H)
-#define MT_J MT(MOD_RGUI, KC_J)
-#define MT_K MT(MOD_RCTL, KC_K)
-#define MT_L MT(MOD_LALT, KC_L)
+// Bottom row right
 #define MT_M MT(MOD_RALT, KC_M)
-#define LT_SPACE LT(2, KC_SPACE)
-#define MT_SCLN MT(MOD_RSFT, KC_SCLN)
 
-#define QK_TTD QK_DYNAMIC_TAPPING_TERM_DOWN
-#define QK_TTU QK_DYNAMIC_TAPPING_TERM_UP
-#define QK_TTP QK_DYNAMIC_TAPPING_TERM_PRINT
+// Thumbs
+#define LT_ESC LT(1, KC_ESCAPE)
+#define LT_SPACE LT(2, KC_SPACE)
+
+// Misc QMK keys
 #define RGB_FWD RGB_MODE_FORWARD
 
 
@@ -45,15 +48,15 @@
 
 #define VANDALT_NAV_LAYER \
     QK_BOOT, RGB_SPI, RGB_FWD, _______, _______, RGB_VAI,    KC_VOLU, KC_MUTE, _______, _______,  _______, KC_PSCR, \
-    _______, RGB_SPD, QK_TTD,  QK_TTU,  QK_TTP,  RGB_VAD,    KC_VOLD, KC_MPRV, KC_MPLY, KC_MNXT,  KC_BRIU, _______, \
+    _______, RGB_SPD, DT_DOWN, DT_UP,   DT_PRNT, RGB_VAD,    KC_VOLD, KC_MPRV, KC_MPLY, KC_MNXT,  KC_BRIU, _______, \
     _______, _______, _______, _______, _______, _______,    KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_BRID, _______, \
     QK_LLCK, RGB_HUD, RGB_HUI, _______, _______, _______,    KC_HOME, KC_PGDN, KC_PGUP, KC_END,   _______, _______, \
-                                         KC_DEL, RGB_TOG,    _______, _______
+                                        KC_DEL, RGB_TOG,    _______, _______
 
 #define VANDALT_MOUSE_LAYER \
     _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______,  _______, _______, \
     _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______,  _______, _______, \
-    _______, _______, _______, _______, _______, _______,    MS_LEFT, MS_DOWN, MS_UP,   MS_RIGHT, _______, _______, \
+    _______, _______, _______, _______, _______, _______,    MS_LEFT, MS_DOWN, MS_UP,   MS_RGHT, _______, _______, \
     _______, _______, _______, _______, _______, _______,    MS_WHLL, MS_WHLD, MS_WHLU, MS_WHLR,  _______, _______, \
                                          KC_DEL, _______,    MS_BTN2, MS_BTN1
 
