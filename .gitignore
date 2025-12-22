@@ -14,7 +14,3 @@
 compile_commands.json
 .clangd/
 .cache/
-
-# keymap-drawer outputs
-*.ortho.svg
-*.yaml

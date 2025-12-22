@@ -1,0 +1,248 @@
+layout: {qmk_keyboard: zsa/voyager, layout_name: LAYOUT}
+layers:
+  L0:
+  - ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+  - ['0', '=', TAB, Q, W, E, R, T, Y, U]
+  - - I
+    - O
+    - P
+    - '-'
+    - BSPC
+    - {t: A, h: MOD_LSFT}
+    - {t: S, h: MOD_LALT}
+    - {t: D, h: MOD_LCTL}
+    - {t: F, h: MOD_LGUI}
+    - {t: G, h: L2}
+  - - {t: H, h: L1}
+    - {t: J, h: MOD_RGUI}
+    - {t: K, h: MOD_RCTL}
+    - {t: L, h: MOD_LALT}
+    - {t: ;, h: MOD_RSFT}
+    - ''''
+    - CW TOGG
+    - {t: Z, h: MOD_LCTL}
+    - {t: X, h: MOD_LSFT}
+    - C
+  - - {t: V, h: MOD_RALT}
+    - {t: B, h: L3}
+    - N
+    - {t: M, h: MOD_RALT}
+    - ','
+    - .
+    - /
+    - ENTER
+    - {t: ESCAPE, h: L1}
+    - LEFT GUI
+  - - QK REPEAT KEY
+    - {t: SPACE, h: L2}
+  L1:
+  - - {t: ▽, type: trans}
+    - F1
+    - F2
+    - F3
+    - F4
+    - F5
+    - F6
+    - F7
+    - F8
+    - F9
+  - - F10
+    - F11
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '{'
+  - - '}'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F12
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {type: held}
+    - '['
+    - ']'
+    - {t: ▽, type: trans}
+    - \
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '{'
+    - '}'
+    - {t: ▽, type: trans}
+    - '|'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: L4, h: toggle}
+  - - {t: ▽, type: trans}
+    - SPACE
+  L2:
+  - - QK BOOT
+    - RGB SPI
+    - RGB MODE FORWARD
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - RGB VAI
+    - VOLU
+    - MUTE
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - PSCR
+    - {t: ▽, type: trans}
+    - RGB SPD
+    - DT DOWN
+    - DT UP
+    - DT PRNT
+    - RGB VAD
+    - VOLD
+    - MPRV
+  - - MPLY
+    - MNXT
+    - BRIU
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - LSFT
+    - LALT
+    - LCTL
+    - {type: held}
+  - - LEFT
+    - DOWN
+    - UP
+    - RIGHT
+    - BRID
+    - {t: ▽, type: trans}
+    - QK LLCK
+    - RGB HUD
+    - RGB HUI
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - HOME
+    - PGDN
+    - PGUP
+    - END
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - DEL
+    - RGB TOG
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  L3:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - MS LEFT
+    - MS DOWN
+    - MS UP
+    - MS RGHT
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {type: held}
+    - MS WHLL
+    - MS WHLD
+    - MS WHLU
+    - MS WHLR
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - DEL
+    - {t: ▽, type: trans}
+  - [MS BTN2, MS BTN1]
+  L4:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - A
+    - S
+    - D
+    - F
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - J
+    - K
+    - L
+    - ;
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - Z
+    - X
+    - {t: ▽, type: trans}
+  - - V
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - M
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - BSPC
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - SPACE
