@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: zsa/voyager, layout_name: LAYOUT}
 layers:
-  L0:
+  Base:
   - ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9']
   - ['0', '=', TAB, Q, W, E, R, T, Y, U]
   - - I
@@ -11,9 +11,9 @@ layers:
     - {t: A, h: MOD_LSFT}
     - {t: S, h: MOD_LALT}
     - {t: D, h: MOD_LCTL}
-    - {t: F, h: MOD_LGUI}
-    - {t: G, h: L2}
-  - - {t: H, h: L1}
+    - {t: F, h: Nav}
+    - {t: G, h: MOD_LGUI}
+  - - {t: H, h: Sym}
     - {t: J, h: MOD_RGUI}
     - {t: K, h: MOD_RCTL}
     - {t: L, h: MOD_LALT}
@@ -24,18 +24,18 @@ layers:
     - {t: X, h: MOD_LSFT}
     - C
   - - {t: V, h: MOD_RALT}
-    - {t: B, h: L3}
+    - {t: B, h: Mouse}
     - N
     - {t: M, h: MOD_RALT}
     - ','
     - .
     - /
     - ENTER
-    - {t: ESCAPE, h: L1}
+    - {t: ESCAPE, h: Sym}
     - LEFT GUI
   - - QK REPEAT KEY
-    - {t: SPACE, h: L2}
-  L1:
+    - {t: SPACE, h: Nav}
+  Sym:
   - - {t: ▽, type: trans}
     - F1
     - F2
@@ -79,55 +79,55 @@ layers:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - '{'
-    - '}'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - '|'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: L4, h: toggle}
+    - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - SPACE
-  L2:
-  - - QK BOOT
-    - RGB SPI
-    - RGB MODE FORWARD
+  Nav:
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - RGB VAI
-    - VOLU
-    - MUTE
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
-    - PSCR
-    - {t: ▽, type: trans}
-    - RGB SPD
-    - DT DOWN
-    - DT UP
-    - DT PRNT
-    - RGB VAD
-    - VOLD
-    - MPRV
-  - - MPLY
-    - MNXT
-    - BRIU
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - LSFT
-    - LALT
-    - LCTL
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - MOD LSFT
+    - {t: ▽, type: trans}
+    - MOD LCTL
     - {type: held}
+    - {t: ▽, type: trans}
   - - LEFT
     - DOWN
     - UP
     - RIGHT
-    - BRID
     - {t: ▽, type: trans}
-    - QK LLCK
-    - RGB HUD
-    - RGB HUI
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -137,11 +137,11 @@ layers:
     - END
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - DEL
-    - RGB TOG
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  L3:
+  Mouse:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -193,7 +193,7 @@ layers:
     - DEL
     - {t: ▽, type: trans}
   - [MS BTN2, MS BTN1]
-  L4:
+  NoMod:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
