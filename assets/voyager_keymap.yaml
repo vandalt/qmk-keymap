@@ -12,7 +12,7 @@ layers:
     - {t: S, h: MOD_LALT}
     - {t: D, h: MOD_LCTL}
     - {t: F, h: Nav}
-    - {t: G, h: MOD_LGUI}
+    - {t: G, h: MOD_RALT}
   - - {t: H, h: Sym}
     - {t: J, h: MOD_RGUI}
     - {t: K, h: MOD_RCTL}
@@ -23,7 +23,7 @@ layers:
     - {t: Z, h: MOD_LCTL}
     - {t: X, h: MOD_LSFT}
     - C
-  - - {t: V, h: MOD_RALT}
+  - - {t: V, h: MOD_LGUI}
     - {t: B, h: Mouse}
     - N
     - {t: M, h: MOD_RALT}

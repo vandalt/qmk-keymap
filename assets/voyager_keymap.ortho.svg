@@ -251,7 +251,7 @@ path.combo {
 <g transform="translate(308, 168)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">G</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 88%">MOD_LGUI</tspan></text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 88%">MOD_RALT</tspan></text>
 </g>
 <g transform="translate(560, 168)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -306,7 +306,7 @@ path.combo {
 <g transform="translate(252, 213)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">V</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 88%">MOD_RALT</tspan></text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 88%">MOD_LGUI</tspan></text>
 </g>
 <g transform="translate(308, 224)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -363,6 +363,14 @@ path.combo {
 <a href="#Sym">
 <text x="0" y="24" class="key hold layer-activator">Sym</text>
 </a></g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="210" y="191" width="28" height="26" class="combo"/>
+<text x="224" y="204" class="combo tap">MEDIA</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="630" y="191" width="28" height="26" class="combo"/>
+<text x="644" y="204" class="combo tap">MEDIA</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 437)" class="layer-Sym">
