@@ -31,10 +31,10 @@ layers:
     - .
     - /
     - ENTER
-    - {t: ESCAPE, h: Sym}
+    - {t: ESC, h: Sym}
     - LEFT GUI
   - - QK REPEAT KEY
-    - {t: SPACE, h: Nav}
+    - {t: SPC, h: Sym}
   Sym:
   - - {t: ▽, type: trans}
     - F1
@@ -66,7 +66,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {type: held}
+  - - {t: ▽, type: trans}
     - '['
     - ']'
     - {t: ▽, type: trans}
@@ -117,13 +117,13 @@ layers:
     - MOD LSFT
     - {t: ▽, type: trans}
     - MOD LCTL
-    - {type: held}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - LEFT
     - DOWN
     - UP
     - RIGHT
-    - {t: ▽, type: trans}
+    - DEL
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -137,7 +137,7 @@ layers:
     - END
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - QK LLCK
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -183,14 +183,14 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
-    - {type: held}
+    - {t: ▽, type: trans}
     - MS WHLL
     - MS WHLD
     - MS WHLU
     - MS WHLR
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - DEL
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - [MS BTN2, MS BTN1]
   NoMod:

@@ -1,14 +1,22 @@
 #define LAYOUT_WRAPPER(...) LAYOUT_LR(__VA_ARGS__)
 
+enum layers {
+    BASE,
+    SYM,
+    NAV,
+    MOUSE,
+    NOMOD
+};
+
 // Home row left
 #define MT_A MT(MOD_LSFT, KC_A)
 #define MT_S MT(MOD_LALT, KC_S)
 #define MT_D MT(MOD_LCTL, KC_D)
-#define MT_F LT(2, KC_F)
+#define MT_F LT(NAV, KC_F)
 #define MT_G MT(MOD_LGUI, KC_G)
 
 // Home row right
-#define MT_H LT(1, KC_H)
+#define MT_H LT(SYM, KC_H)
 #define MT_J MT(MOD_RGUI, KC_J)
 #define MT_K MT(MOD_RCTL, KC_K)
 #define MT_L MT(MOD_LALT, KC_L)
@@ -18,14 +26,14 @@
 #define MT_Z MT(MOD_LCTL, KC_Z)
 #define MT_X MT(MOD_LSFT, KC_X)
 #define MT_V MT(MOD_RALT, KC_V)
-#define MT_B LT(3, KC_B)
+#define MT_B LT(MOUSE, KC_B)
 
 // Bottom row right
 #define MT_M MT(MOD_RALT, KC_M)
 
 // Thumbs
-#define MT_ESC LT(1, KC_ESCAPE)
-#define MT_SPACE LT(1, KC_SPACE)
+#define MT_ESC LT(SYM, KC_ESCAPE)
+#define MT_SPACE LT(SYM, KC_SPACE)
 
 // Misc QMK keys
 #define RGB_FWD RGB_MODE_FORWARD
@@ -65,7 +73,7 @@
     _______, RGB_SPD, DT_DOWN, DT_UP,   DT_PRNT, RGB_VAD,    KC_VOLD, KC_MPRV, KC_MPLY, KC_MNXT,  KC_BRIU, _______, \
     _______, _______, _______, _______, _______, _______,    _______, _______, _______  ________, KC_BRID, _______, \
     ________, RGB_HUD, RGB_HUI, _______, _______, _______,    _______, _______, _______, _______   _______, _______, \
-                                        TG(4), RGB_TOG,    _______, _______
+                                        TG(NOMOD), RGB_TOG,    _______, _______
 
 
 #define VANDALT_MOUSE_LAYER \

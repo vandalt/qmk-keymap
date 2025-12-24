@@ -22,6 +22,17 @@ The SVG image can then be generated with
 keymap draw assets/voyager_keymap.yaml > voyager_keymap.ortho.svg
 ```
 
+## Compiling and flashing
+
+To compile and flash the keymap, use
+
+```bash
+qmk compile -kb zsa/voyager -km vandalt
+qmk flash -kb zsa/voyager -km vandalt
+```
+
+To compile both at once, simply use `qmk compile` without any arguments.
+
 ## Keyboards
 
 I have configs for the ZSA Moonlander and ZSA Voyager.

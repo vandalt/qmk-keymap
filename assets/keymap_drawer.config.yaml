@@ -1,0 +1,9 @@
+parse_config:
+  qmk_remove_keycode_prefix: ["KC_"]
+  
+  raw_binding_map:
+    "LT(NAV, KC_F)": {t: F, h: Nav}
+    "LT(SYM, KC_H)": {t: H, h: Sym}
+    "LT(MOUSE, KC_B)": {t: B, h: Mouse}
+    "LT(SYM, KC_ESCAPE)": {t: ESC, h: Sym}
+    "LT(SYM, KC_SPACE)": {t: SPC, h: Sym}
