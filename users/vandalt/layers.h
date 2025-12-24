@@ -5,6 +5,7 @@ enum layers {
     BASE,
     SYM,
     NAV,
+    NUM,
     MEDIA,
     MOUSE,
     NOMOD
@@ -19,7 +20,7 @@ enum layers {
 
 // Home row right
 #define MT_H LT(SYM, KC_H)
-#define MT_J MT(MOD_RGUI, KC_J)
+#define MT_J LT(NUM, KC_J)
 #define MT_K MT(MOD_RCTL, KC_K)
 #define MT_L MT(MOD_LALT, KC_L)
 #define MT_SCLN MT(MOD_RSFT, KC_SCLN)
@@ -31,7 +32,7 @@ enum layers {
 #define MT_B LT(MOUSE, KC_B)
 
 // Bottom row right
-#define MT_M MT(MOD_RALT, KC_M)
+#define MT_M MT(MOD_RGUI, KC_M)
 
 // Thumbs
 #define MT_ESC LT(SYM, KC_ESCAPE)
@@ -40,9 +41,6 @@ enum layers {
 // Misc QMK keys
 #define RGB_FWD RGB_MODE_FORWARD
 
-
-// TODO: Media/misc should not be on the same as nav, can be below home row
-// TODO: Give num pad a chance
 #define VANDALT_BASE_LAYER \
     KC_GRAVE, KC_1, KC_2, KC_3, KC_4, KC_5,    KC_6, KC_7, KC_8,     KC_9,    KC_0,     KC_EQUAL, \
     KC_TAB,   KC_Q, KC_W, KC_E, KC_R, KC_T,    KC_Y, KC_U, KC_I,     KC_O,    KC_P,     KC_MINUS, \
@@ -63,6 +61,14 @@ enum layers {
     _______, MOD_LSFT, _______, MOD_LCTL, _______, _______,    KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_DEL,  _______, \
     _______, _______,  _______, _______,  _______, _______,    KC_HOME, KC_PGDN, KC_PGUP, KC_END,   _______, _______, \
                                           QK_LLCK, _______,    _______, _______
+
+#define VANDALT_NUM_LAYER \
+    _______, _______,  _______, _______,  _______, _______,    _______, _______, _______, _______,  _______, _______, \
+    _______, _______, KC_3,     KC_2,    KC_1,  _______,    _______, _______, _______, _______,  _______, _______, \
+    _______, _______, KC_6,     KC_5,    KC_4, _______,    _______, _______, _______, _______,  _______, _______, \
+    _______, KC_0,    KC_9,     KC_8,    KC_7,   _______,    _______, _______, _______, _______,   _______, _______, \
+                                          QK_LLCK,  _______,   _______, _______
+
 
 #define VANDALT_MEDIA_LAYER \
     QK_BOOT, RGB_SPI, RGB_FWD, _______, _______, RGB_VAI,    KC_VOLU, KC_MUTE, _______, _______,  _______, KC_PSCR, \

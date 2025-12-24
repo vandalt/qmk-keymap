@@ -14,7 +14,7 @@ layers:
     - {t: F, h: Nav}
     - {t: G, h: MOD_RALT}
   - - {t: H, h: Sym}
-    - {t: J, h: MOD_RGUI}
+    - LT(NUM,J)
     - {t: K, h: MOD_RCTL}
     - {t: L, h: MOD_LALT}
     - {t: ;, h: MOD_RSFT}
@@ -26,7 +26,7 @@ layers:
   - - {t: V, h: MOD_LGUI}
     - {t: B, h: Mouse}
     - N
-    - {t: M, h: MOD_RALT}
+    - {t: M, h: MOD_RGUI}
     - ','
     - .
     - /
@@ -135,6 +135,59 @@ layers:
     - PGDN
     - PGUP
     - END
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - QK LLCK
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  Num:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '3'
+    - '2'
+    - '1'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '6'
+    - '5'
+    - '4'
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '0'
+    - '9'
+    - '8'
+  - - '7'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - QK LLCK
