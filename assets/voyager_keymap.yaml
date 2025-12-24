@@ -141,6 +141,59 @@ layers:
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+  Media:
+  - - QK BOOT
+    - RGB SPI
+    - RGB MODE FORWARD
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - RGB VAI
+    - VOLU
+    - MUTE
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - PSCR
+    - {t: ▽, type: trans}
+    - RGB SPD
+    - DT DOWN
+    - DT UP
+    - DT PRNT
+    - RGB VAD
+    - VOLD
+    - MPRV
+  - - MPLY
+    - MNXT
+    - BRIU
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - BRID
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - RGB HUD
+    - RGB HUI
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - TG(NOMOD)
+    - RGB TOG
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   Mouse:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}

@@ -1,6 +1,7 @@
 SRC += vandalt.c
 
 CONSOLE_ENABLE = no
+COMBO_ENABLE = yes
 COMMAND_ENABLE = no
 ORYX_ENABLE = yes
 SPACE_CADET_ENABLE = no

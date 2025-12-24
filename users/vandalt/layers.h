@@ -1,9 +1,11 @@
 #define LAYOUT_WRAPPER(...) LAYOUT_LR(__VA_ARGS__)
 
+
 enum layers {
     BASE,
     SYM,
     NAV,
+    MEDIA,
     MOUSE,
     NOMOD
 };
@@ -39,12 +41,6 @@ enum layers {
 #define RGB_FWD RGB_MODE_FORWARD
 
 
-
-// TODO: RHS and LHS need to access sym, easy toggle lhs and can be combo rhs because only fun keys which I never use
-// TODO: Nav layer should be accessible from lhs, with ctrl and shift easily accessible
-// TODO: Nav should be accessible from sym as well when need to move around
-// TODO: Layer lock on nav layer to easily move around
-// TODO: Del should be on Nav
 // TODO: Media/misc should not be on the same as nav, can be below home row
 // TODO: Give num pad a chance
 #define VANDALT_BASE_LAYER \
@@ -71,8 +67,8 @@ enum layers {
 #define VANDALT_MEDIA_LAYER \
     QK_BOOT, RGB_SPI, RGB_FWD, _______, _______, RGB_VAI,    KC_VOLU, KC_MUTE, _______, _______,  _______, KC_PSCR, \
     _______, RGB_SPD, DT_DOWN, DT_UP,   DT_PRNT, RGB_VAD,    KC_VOLD, KC_MPRV, KC_MPLY, KC_MNXT,  KC_BRIU, _______, \
-    _______, _______, _______, _______, _______, _______,    _______, _______, _______  ________, KC_BRID, _______, \
-    ________, RGB_HUD, RGB_HUI, _______, _______, _______,    _______, _______, _______, _______   _______, _______, \
+    _______, _______, _______, _______, _______, _______,    _______, _______, _______,  _______, KC_BRID, _______, \
+    _______, RGB_HUD, RGB_HUI, _______, _______, _______,    _______, _______, _______, _______,   _______, _______, \
                                         TG(NOMOD), RGB_TOG,    _______, _______
 
 

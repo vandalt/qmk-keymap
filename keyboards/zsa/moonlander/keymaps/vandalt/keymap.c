@@ -1,5 +1,6 @@
 #include QMK_KEYBOARD_H
 #include "layers.h"
+#include "vandalt.h"
 
 #define LAYOUT_LR( \
     k00, k01, k02, k03, k04, k05,   k06, k07, k08, k09, k10, k11, \
@@ -15,10 +16,15 @@
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
                                     k48,   k49,   KC_NO,   KC_NO, k50,   k51)
 
+combo_t key_combos[] = {
+    VANDALT_COMBOS
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BASE] = LAYOUT_WRAPPER(VANDALT_BASE_LAYER),
   [SYM] = LAYOUT_WRAPPER(VANDALT_SYM_LAYER),
   [NAV] = LAYOUT_WRAPPER(VANDALT_NAV_LAYER),
+  [MEDIA] = LAYOUT_WRAPPER(VANDALT_MEDIA_LAYER),
   [MOUSE] = LAYOUT_WRAPPER(VANDALT_MOUSE_LAYER),
   [NOMOD] = LAYOUT_WRAPPER(VANDALT_NOMOD_LAYER)
 };
