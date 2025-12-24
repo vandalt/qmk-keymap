@@ -15,7 +15,7 @@ enum layers {
 #define MT_S MT(MOD_LALT, KC_S)
 #define MT_D MT(MOD_LCTL, KC_D)
 #define MT_F LT(NAV, KC_F)
-#define MT_G MT(MOD_LGUI, KC_G)
+#define MT_G MT(MOD_RALT, KC_G)
 
 // Home row right
 #define MT_H LT(SYM, KC_H)
@@ -27,7 +27,7 @@ enum layers {
 // Bottom row left
 #define MT_Z MT(MOD_LCTL, KC_Z)
 #define MT_X MT(MOD_LSFT, KC_X)
-#define MT_V MT(MOD_RALT, KC_V)
+#define MT_V MT(MOD_LGUI, KC_V)
 #define MT_B LT(MOUSE, KC_B)
 
 // Bottom row right
