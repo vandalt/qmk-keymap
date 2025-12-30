@@ -2,8 +2,17 @@ layout: {qmk_keyboard: zsa/voyager, layout_name: LAYOUT}
 layers:
   Base:
   - ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-  - ['0', '=', TAB, Q, W, E, R, T, Y, U]
-  - - I
+  - - '0'
+    - '='
+    - TAB
+    - Q
+    - W
+    - {t: E, h: MEDIA}
+    - R
+    - T
+    - Y
+    - U
+  - - {t: I, h: MEDIA}
     - O
     - P
     - '-'
@@ -13,7 +22,7 @@ layers:
     - {t: D, h: MOD_LCTL}
     - {t: F, h: Nav}
     - {t: G, h: MOD_RALT}
-  - - {t: H, h: Sym}
+  - - LT(MOD RALT,H)
     - LT(NUM,J)
     - {t: K, h: MOD_RCTL}
     - {t: L, h: MOD_LALT}

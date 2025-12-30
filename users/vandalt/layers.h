@@ -19,7 +19,7 @@ enum layers {
 #define MT_G MT(MOD_RALT, KC_G)
 
 // Home row right
-#define MT_H LT(SYM, KC_H)
+#define MT_H LT(MOD_RALT, KC_H)
 #define MT_J LT(NUM, KC_J)
 #define MT_K MT(MOD_RCTL, KC_K)
 #define MT_L MT(MOD_LALT, KC_L)
@@ -38,12 +38,16 @@ enum layers {
 #define MT_ESC LT(SYM, KC_ESCAPE)
 #define MT_SPACE LT(SYM, KC_SPACE)
 
+// Top row
+#define MT_E LT(MEDIA, KC_E)
+#define MT_I LT(MEDIA, KC_I)
+
 // Misc QMK keys
 #define RGB_FWD RGB_MODE_FORWARD
 
 #define VANDALT_BASE_LAYER \
     KC_GRAVE, KC_1, KC_2, KC_3, KC_4, KC_5,    KC_6, KC_7, KC_8,     KC_9,    KC_0,     KC_EQUAL, \
-    KC_TAB,   KC_Q, KC_W, KC_E, KC_R, KC_T,    KC_Y, KC_U, KC_I,     KC_O,    KC_P,     KC_MINUS, \
+    KC_TAB,   KC_Q, KC_W, MT_E, KC_R, KC_T,    KC_Y, KC_U, MT_I,     KC_O,    KC_P,     KC_MINUS, \
     KC_BSPC,  MT_A, MT_S, MT_D, MT_F, MT_G,    MT_H, MT_J, MT_K,     MT_L,    MT_SCLN,  KC_QUOTE, \
     CW_TOGG,  MT_Z, MT_X, KC_C, MT_V, MT_B,    KC_N, MT_M, KC_COMMA, KC_DOT,  KC_SLASH, KC_ENTER, \
                        MT_ESC, KC_LEFT_GUI,    QK_REPEAT_KEY, MT_SPACE
