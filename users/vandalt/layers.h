@@ -19,7 +19,7 @@ enum layers {
 #define MT_G MT(MOD_RALT, KC_G)
 
 // Home row right
-#define MT_H LT(MOD_RALT, KC_H)
+#define MT_H MT(MOD_RALT, KC_H)
 #define MT_J LT(NUM, KC_J)
 #define MT_K MT(MOD_RCTL, KC_K)
 #define MT_L MT(MOD_LALT, KC_L)
@@ -87,7 +87,7 @@ enum layers {
     _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______,  _______, _______, \
     _______, _______, _______, _______, _______, _______,    MS_LEFT, MS_DOWN, MS_UP,   MS_RGHT, _______, _______, \
     _______, _______, _______, _______, _______, _______,    MS_WHLL, MS_WHLD, MS_WHLU, MS_WHLR,  _______, _______, \
-                                        _______, _______,    MS_BTN2, MS_BTN1
+                                        QK_LLCK, _______,    MS_BTN2, MS_BTN1
 
 
 #define VANDALT_NOMOD_LAYER \
