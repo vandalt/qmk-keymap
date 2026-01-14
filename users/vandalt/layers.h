@@ -33,45 +33,42 @@ enum layers {
 
 // Bottom row right
 #define MT_M MT(MOD_RGUI, KC_M)
+#define MT_N LT(NUM, KC_N)
 
 // Thumbs
 #define MT_ESC LT(SYM, KC_ESCAPE)
 #define MT_SPACE LT(SYM, KC_SPACE)
 
-// Top row
-#define MT_E LT(MEDIA, KC_E)
-#define MT_I LT(MEDIA, KC_I)
-
 // Misc QMK keys
 #define RGB_FWD RGB_MODE_FORWARD
 
 #define VANDALT_BASE_LAYER \
-    KC_GRAVE, KC_1, KC_2, KC_3, KC_4, KC_5,    KC_6, KC_7, KC_8,     KC_9,    KC_0,     KC_EQUAL, \
-    KC_TAB,   KC_Q, KC_W, MT_E, KC_R, KC_T,    KC_Y, KC_U, MT_I,     KC_O,    KC_P,     KC_MINUS, \
-    KC_BSPC,  MT_A, MT_S, MT_D, MT_F, MT_G,    MT_H, MT_J, MT_K,     MT_L,    MT_SCLN,  KC_QUOTE, \
-    CW_TOGG,  MT_Z, MT_X, KC_C, MT_V, MT_B,    KC_N, MT_M, KC_COMMA, KC_DOT,  KC_SLASH, KC_ENTER, \
-                       MT_ESC, KC_LEFT_GUI,    QK_REPEAT_KEY, MT_SPACE
+    KC_GRAVE, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), KC_CAPS,    KC_DEL, KC_HOME, KC_END,   KC_LBRC, KC_RBRC,  KC_EQUAL, \
+    KC_TAB,   KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,       KC_Y,   KC_U,    KC_I,     KC_O,    KC_P,     KC_MINUS, \
+    KC_BSPC,  MT_A,    MT_S,    MT_D,    MT_F,    MT_G,       MT_H,   MT_J,    MT_K,     MT_L,    MT_SCLN,  KC_QUOTE, \
+    CW_TOGG,  MT_Z,    MT_X,    KC_C,    MT_V,    MT_B,       MT_N,   MT_M,    KC_COMMA, KC_DOT,  KC_SLASH, KC_ENTER, \
+                                MT_ESC,  KC_LEFT_GUI,         QK_REPEAT_KEY, MT_SPACE
 
 #define VANDALT_SYM_LAYER \
     _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,      KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  \
-    _______, _______, _______, _______, _______, _______,    _______, KC_LCBR, KC_RCBR, _______, _______, KC_F12,  \
-    _______, _______, _______, _______, _______, _______,    _______, KC_LBRC, KC_RBRC, _______, KC_BSLS, _______, \
-    _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______, KC_PIPE, _______, \
+    _______, _______, KC_HASH, KC_AT,   KC_EXLM, _______,    _______, KC_LCBR, KC_RCBR, KC_LPRN, KC_RPRN, KC_F12,  \
+    _______, _______, KC_CIRC, KC_PERC, KC_DLR,  _______,    _______, KC_LBRC, KC_RBRC, _______, KC_BSLS, _______, \
+    _______, KC_RPRN, KC_LPRN, KC_ASTR, KC_AMPR, _______,    _______, _______, _______, _______, KC_PIPE, _______, \
                                         _______, _______,      _______, KC_SPACE
 
 #define VANDALT_NAV_LAYER \
     _______, _______,  _______, _______,  _______, _______,    _______, _______, _______, _______,  _______, _______, \
     _______, _______,  _______, _______,  _______, _______,    _______, _______, _______, _______,  _______, _______, \
-    _______, MOD_LSFT, _______, MOD_LCTL, _______, _______,    KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_DEL,  _______, \
+    _______, _______, _______, _______, _______, _______,    KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_DEL,  _______, \
     _______, _______,  _______, _______,  _______, _______,    KC_HOME, KC_PGDN, KC_PGUP, KC_END,   _______, _______, \
                                           QK_LLCK, _______,    _______, _______
 
 #define VANDALT_NUM_LAYER \
-    _______, _______,  _______, _______,  _______, _______,    _______, _______, _______, _______,  _______, _______, \
-    _______, _______, KC_3,     KC_2,    KC_1,  _______,    _______, _______, _______, _______,  _______, _______, \
-    _______, _______, KC_6,     KC_5,    KC_4, _______,    _______, _______, _______, _______,  _______, _______, \
-    _______, KC_0,    KC_9,     KC_8,    KC_7,   _______,    _______, _______, _______, _______,   _______, _______, \
-                                          QK_LLCK,  _______,   _______, _______
+    _______, _______, _______, _______, _______, KC_PEQL,    _______, _______, _______, _______,  _______, _______, \
+    _______, KC_PSLS, KC_3,    KC_2,    KC_1,    KC_PPLS,    _______, _______, _______, _______,  _______, _______, \
+    _______, KC_PAST, KC_6,    KC_5,    KC_4,    KC_PMNS,    _______, _______, _______, _______,  _______, _______, \
+    KC_PENT, KC_0,    KC_9,    KC_8,    KC_7,    KC_DOT,     _______, _______, _______, _______,   _______, _______, \
+                                          QK_LLCK, _______,    _______, _______
 
 
 #define VANDALT_MEDIA_LAYER \

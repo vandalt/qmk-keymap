@@ -18,4 +18,3 @@ void keyboard_post_init_user(void) {
 
 const uint16_t PROGMEM cv_media_combo[] = {KC_C, MT_V, COMBO_END};
 const uint16_t PROGMEM mcomma_media_combo[] = {MT_M, KC_COMMA, COMBO_END};
-
