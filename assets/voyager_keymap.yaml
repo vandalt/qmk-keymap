@@ -1,8 +1,8 @@
 layout: {qmk_keyboard: zsa/voyager, layout_name: LAYOUT}
 layers:
   Base:
-  - ['`', Ctl+Z, Ctl+X, Ctl+C, Ctl+V, CAPS, DEL, HOME, END, '[']
-  - [']', '=', TAB, Q, W, E, R, T, Y, U]
+  - ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+  - ['0', '=', TAB, Q, W, E, R, T, Y, U]
   - - I
     - O
     - P
@@ -13,8 +13,8 @@ layers:
     - {t: D, h: MOD_LCTL}
     - {t: F, h: Nav}
     - {t: G, h: MOD_RALT}
-  - - {t: H, h: MOD_RALT}
-    - {t: J, h: Num}
+  - - {t: H, h: Sym}
+    - {t: J, h: MOD_RGUI}
     - {t: K, h: MOD_RCTL}
     - {t: L, h: MOD_LALT}
     - {t: ;, h: MOD_RSFT}
@@ -25,8 +25,8 @@ layers:
     - C
   - - {t: V, h: MOD_LGUI}
     - {t: B, h: Mouse}
-    - {t: N, h: Num}
-    - {t: M, h: MOD_RGUI}
+    - N
+    - {t: M, h: MOD_RALT}
     - ','
     - .
     - /
@@ -50,21 +50,21 @@ layers:
     - F11
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - '#'
-    - '@'
-    - '!'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - '{'
   - - '}'
-    - (
-    - )
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - F12
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - ^
-    - '%'
-    - $
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - '['
@@ -73,10 +73,10 @@ layers:
     - \
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - )
-    - (
-    - '*'
-  - - '&'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -114,9 +114,9 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+    - MOD LSFT
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - MOD LCTL
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - LEFT
@@ -135,59 +135,6 @@ layers:
     - PGDN
     - PGUP
     - END
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - QK LLCK
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  Num:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - PEQL
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - PSLS
-    - '3'
-    - '2'
-    - '1'
-    - PPLS
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - PAST
-    - '6'
-    - '5'
-    - '4'
-    - PMNS
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - PENT
-    - '0'
-    - '9'
-    - '8'
-  - - '7'
-    - PDOT
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - QK LLCK
@@ -296,7 +243,7 @@ layers:
     - MS WHLR
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - QK LLCK
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - [MS BTN2, MS BTN1]
   NoMod:

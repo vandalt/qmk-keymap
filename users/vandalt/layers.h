@@ -5,7 +5,6 @@ enum layers {
     BASE,
     SYM,
     NAV,
-    NUM,
     MEDIA,
     MOUSE,
     NOMOD
@@ -19,8 +18,8 @@ enum layers {
 #define MT_G MT(MOD_RALT, KC_G)
 
 // Home row right
-#define MT_H MT(MOD_RALT, KC_H)
-#define MT_J LT(NUM, KC_J)
+#define MT_H LT(SYM, KC_H)
+#define MT_J MT(MOD_RGUI, KC_J)
 #define MT_K MT(MOD_RCTL, KC_K)
 #define MT_L MT(MOD_LALT, KC_L)
 #define MT_SCLN MT(MOD_RSFT, KC_SCLN)
@@ -32,8 +31,7 @@ enum layers {
 #define MT_B LT(MOUSE, KC_B)
 
 // Bottom row right
-#define MT_M MT(MOD_RGUI, KC_M)
-#define MT_N LT(NUM, KC_N)
+#define MT_M MT(MOD_RALT, KC_M)
 
 // Thumbs
 #define MT_ESC LT(SYM, KC_ESCAPE)
@@ -42,34 +40,29 @@ enum layers {
 // Misc QMK keys
 #define RGB_FWD RGB_MODE_FORWARD
 
+
+// TODO: Media/misc should not be on the same as nav, can be below home row
+// TODO: Give num pad a chance
 #define VANDALT_BASE_LAYER \
-    KC_GRAVE, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), KC_CAPS,    KC_DEL, KC_HOME, KC_END,   KC_LBRC, KC_RBRC,  KC_EQUAL, \
-    KC_TAB,   KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,       KC_Y,   KC_U,    KC_I,     KC_O,    KC_P,     KC_MINUS, \
-    KC_BSPC,  MT_A,    MT_S,    MT_D,    MT_F,    MT_G,       MT_H,   MT_J,    MT_K,     MT_L,    MT_SCLN,  KC_QUOTE, \
-    CW_TOGG,  MT_Z,    MT_X,    KC_C,    MT_V,    MT_B,       MT_N,   MT_M,    KC_COMMA, KC_DOT,  KC_SLASH, KC_ENTER, \
-                                MT_ESC,  KC_LEFT_GUI,         QK_REPEAT_KEY, MT_SPACE
+    KC_GRAVE, KC_1, KC_2, KC_3, KC_4, KC_5,    KC_6, KC_7, KC_8,     KC_9,    KC_0,     KC_EQUAL, \
+    KC_TAB,   KC_Q, KC_W, KC_E, KC_R, KC_T,    KC_Y, KC_U, KC_I,     KC_O,    KC_P,     KC_MINUS, \
+    KC_BSPC,  MT_A, MT_S, MT_D, MT_F, MT_G,    MT_H, MT_J, MT_K,     MT_L,    MT_SCLN,  KC_QUOTE, \
+    CW_TOGG,  MT_Z, MT_X, KC_C, MT_V, MT_B,    KC_N, MT_M, KC_COMMA, KC_DOT,  KC_SLASH, KC_ENTER, \
+                       MT_ESC, KC_LEFT_GUI,    QK_REPEAT_KEY, MT_SPACE
 
 #define VANDALT_SYM_LAYER \
     _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,      KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  \
-    _______, _______, KC_HASH, KC_AT,   KC_EXLM, _______,    _______, KC_LCBR, KC_RCBR, KC_LPRN, KC_RPRN, KC_F12,  \
-    _______, _______, KC_CIRC, KC_PERC, KC_DLR,  _______,    _______, KC_LBRC, KC_RBRC, _______, KC_BSLS, _______, \
-    _______, KC_RPRN, KC_LPRN, KC_ASTR, KC_AMPR, _______,    _______, _______, _______, _______, KC_PIPE, _______, \
+    _______, _______, _______, _______, _______, _______,    _______, KC_LCBR, KC_RCBR, _______, _______, KC_F12,  \
+    _______, _______, _______, _______, _______, _______,    _______, KC_LBRC, KC_RBRC, _______, KC_BSLS, _______, \
+    _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______, KC_PIPE, _______, \
                                         _______, _______,      _______, KC_SPACE
 
 #define VANDALT_NAV_LAYER \
     _______, _______,  _______, _______,  _______, _______,    _______, _______, _______, _______,  _______, _______, \
     _______, _______,  _______, _______,  _______, _______,    _______, _______, _______, _______,  _______, _______, \
-    _______, _______, _______, _______, _______, _______,    KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_DEL,  _______, \
+    _______, MOD_LSFT, _______, MOD_LCTL, _______, _______,    KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_DEL,  _______, \
     _______, _______,  _______, _______,  _______, _______,    KC_HOME, KC_PGDN, KC_PGUP, KC_END,   _______, _______, \
                                           QK_LLCK, _______,    _______, _______
-
-#define VANDALT_NUM_LAYER \
-    _______, _______, _______, _______, _______, KC_PEQL,    _______, _______, _______, _______,  _______, _______, \
-    _______, KC_PSLS, KC_3,    KC_2,    KC_1,    KC_PPLS,    _______, _______, _______, _______,  _______, _______, \
-    _______, KC_PAST, KC_6,    KC_5,    KC_4,    KC_PMNS,    _______, _______, _______, _______,  _______, _______, \
-    KC_PENT, KC_0,    KC_9,    KC_8,    KC_7,    KC_DOT,     _______, _______, _______, _______,   _______, _______, \
-                                          QK_LLCK, _______,    _______, _______
-
 
 #define VANDALT_MEDIA_LAYER \
     QK_BOOT, RGB_SPI, RGB_FWD, _______, _______, RGB_VAI,    KC_VOLU, KC_MUTE, _______, _______,  _______, KC_PSCR, \
@@ -84,7 +77,7 @@ enum layers {
     _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______,  _______, _______, \
     _______, _______, _______, _______, _______, _______,    MS_LEFT, MS_DOWN, MS_UP,   MS_RGHT, _______, _______, \
     _______, _______, _______, _______, _______, _______,    MS_WHLL, MS_WHLD, MS_WHLU, MS_WHLR,  _______, _______, \
-                                        QK_LLCK, _______,    MS_BTN2, MS_BTN1
+                                        _______, _______,    MS_BTN2, MS_BTN1
 
 
 #define VANDALT_NOMOD_LAYER \
